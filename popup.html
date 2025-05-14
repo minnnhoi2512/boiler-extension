@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định giá ô tô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Định giá ô tô</h2>
+    
+    <div class="form-group">
+        <label for="brand">Thương hiệu:</label>
+        <select id="brand">
+            <option value="">-- Chọn thương hiệu --</option>
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="ford">Ford</option>
+            <option value="mazda">Mazda</option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="lexus">Lexus</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="model">Mẫu xe:</label>
+        <input type="text" id="model" placeholder="VD: Camry, Civic...">
+    </div>
+    
+    <div class="form-group">
+        <label for="year">Năm sản xuất:</label>
+        <input type="number" id="year" min="1990" max="2025" placeholder="VD: 2020">
+    </div>
+    
+    <div class="form-group">
+        <label for="mileage">Số km đã đi:</label>
+        <input type="number" id="mileage" placeholder="VD: 50000">
+    </div>
+    
+    <div class="form-group">
+        <label for="condition">Tình trạng:</label>
+        <select id="condition">
+            <option value="">-- Chọn tình trạng --</option>
+            <option value="excellent">Rất tốt</option>
+            <option value="good">Tốt</option>
+            <option value="fair">Trung bình</option>
+            <option value="poor">Kém</option>
+        </select>
+    </div>
+    
+    <button id="valuate-btn">Định giá xe</button>
+    
+    <div id="result">
+        <p>Giá trị ước tính của xe:</p>
+        <div class="result-value" id="valuation-result"></div>
+        <p>Bạn có muốn gửi thông tin này để nhận tư vấn chi tiết từ nhân viên?</p>
+        <button class="send-button" id="send-info-btn">Gửi thông tin cho nhân viên</button>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
