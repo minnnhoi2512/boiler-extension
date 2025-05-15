@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Cầm xe ô tô trả góp",
+  "version": "1.0",
+  "description": "Tính toán giá trị cầm xe ô tô đang trả góp trên camdotanphu.com",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://camdotanphu.com/cam-xe-o-to-dang-tra-gop/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
