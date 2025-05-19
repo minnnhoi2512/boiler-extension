@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Car Valuation Extension for Cam Do Tan Phu",
+  "name": "Tính Toán Trả Góp Xe",
   "version": "1.0",
-  "author": "phuclh",
-  "description": "Enter car details, get preliminary valuation, and send info to staff based on camdotanphu.com.",
+  "author": "minhoi",
+  "description": "Tính toán khả năng trả góp và giá trị cầm cố xe",
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {
@@ -17,13 +16,10 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": [
-    "activeTab",
-    "storage"
-  ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "phuclh.cyno@gmail.com"
+      "id": "minhoi.cyn3o@gmail.com"
     }
-  }
+  },
+  "permissions": []
 }
