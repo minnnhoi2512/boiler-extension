@@ -16,10 +16,6 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": [
-    "activeTab",
-    "storage"
-  ],
   "browser_specific_settings": {
     "gecko": {
       "id": "phuclh.cyno@gmail.com"
