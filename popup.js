@@ -77,15 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Tải dữ liệu đã lưu
     function loadSavedData() {
-        chrome.storage.local.get('carFormData', function(data) {
-            if (data.carFormData) {
-                document.getElementById('brand').value = data.carFormData.brand || '';
-                document.getElementById('model').value = data.carFormData.model || '';
-                document.getElementById('year').value = data.carFormData.year || '';
-                document.getElementById('mileage').value = data.carFormData.mileage || '';
-                document.getElementById('condition').value = data.carFormData.condition || '';
-            }
-        });
+       
     }
     
     // Định dạng tiền tệ
