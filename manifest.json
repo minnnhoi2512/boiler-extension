@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Simple Extension",
+    "name": "AutoRanker",
     "version": "1.0",
-    "description": "A basic Chrome extension that adds a button to web pages.",
+    "description": "Calculate website value based on traffic, time on site, and keyword price",
     "author": "Super Hoi",
     "icons": {
         "16": "icons/icon16.png",
@@ -24,7 +24,7 @@
     },
     "browser_specific_settings": {
         "gecko": {
-            "id": "mhoinguyen2512@gmail.com"
+            "id": "mhoinguyenpro2512@gmail.com"
         }
     }
 }
